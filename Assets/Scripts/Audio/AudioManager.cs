@@ -17,20 +17,25 @@ public class AudioManager : Singleton<AudioManager>
     [SerializeField] private Slider bgmSlider;
     [SerializeField] private Slider sfxSlider;
 
+    [Header("Audio Data")]
+    [SerializeField] private AudioData audioData;
     protected override void Initialize()
     {
-        bgmController.Init(audioLoader, volumeManager.MIxer);
-        sfxController.Init(audioLoader, volumeManager.MIxer);
+        bgmController.Init(audioLoader, volumeManager.Mixer, audioData);
+        sfxController.Init(audioLoader, volumeManager.Mixer, audioData);
 
         volumeManager.AudioSliders(bgmSlider, sfxSlider);
     }
 
+    // BGM 재생 / 정지
     public void PlayBGM(string name) => bgmController.Play(name);
     public void StopBGM(string name) => bgmController.Stop(name);
-    public void PlaySFX(string name) => sfxController.Play(name);
-    public void StopSFX(string name) => sfxController.Stop(name);
-    public void PlayLoopSFX(string name) => sfxController.Loop(name);
     public void StopAllBGM() => bgmController.StopAll();
+
+    // SFX 재생 / 정지
+    public void PlaySFX(string name) => sfxController.Play(name);
+    public void PlayLoopSFX(string name) => sfxController.Loop(name);
+    public void StopSFX(string name) => sfxController.Stop(name);
     public void StopAllSFX() => sfxController.StopAll();
 }
 

@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Audio
+  m_EditorClassIdentifier: 
+  m_GroupName: Audio
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 551bffd652dbc694aaba9b5f6798ea68
+  m_SerializeEntries:
+  - m_GUID: 1d8ffbb70dc716646abe11dba492a567
+    m_Address: TitleBGMClip
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 641a6cb79f5f8d543a4b203621a47687
+    m_Address: FootStepClip
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5517815d9f6f5314a84e9cc0d3f7d109
+    m_Address: PortalClip
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2fa0d1450df6dc3408529b9b6b24689e
+    m_Address: ButtonClip
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e11a3f731847f0448845ec6c60b679ba
+    m_Address: MainBGMClip
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fb62fab8dc0c7de49b52d9b43e2a42c3
+    m_Address: DoorOpenClip
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a0c1a7fe0aa50b64b98303202ef0ee00
+    m_Address: Robot_OnClip
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9ad7f28858397f846aaba8e74d374626
+    m_Address: Robot_On2Clip
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e2dd3be13bc7fe6488369107d11e1b45
+    m_Address: Sys_OnClip
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e64209a3c663626498d728201a3e848e
+    m_Address: Portal_OutClip
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b6b24b4a003806a47887d447bd3ebd57
+    m_Address: Laser_HitClip
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ae43a9da74e021348b05ce59d52b467b
+    m_Address: Turret_FireClip
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9d2e581ee4adfa4459fb5d4249ee1001
+    m_Address: Turret_TrackRotateClip
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ea5ecb95caf5c824b854e483e944e409
+    m_Address: JumpPadClip
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f4f8d4cde19b0bc41b789aecc954410e
+    m_Address: Turret_IdleRotateClip
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: ab8449e59354aab499259300c41ebac4, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: f3af30047f2a70242bd3fad2c43cd90c, type: 2}
+    - {fileID: 11400000, guid: 34b5efe1aa8a4b34598694d17f71db86, type: 2}

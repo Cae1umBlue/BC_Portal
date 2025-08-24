@@ -19,7 +19,7 @@ public class UIManager : Singleton<UIManager>
 
     private void Start()
     {
-        AudioManager.Instance.AudioSliders(bgmSlider, sfxSlider);
+        //AudioManager.Instance.AudioSliders(bgmSlider, sfxSlider);
     }
 
     public void OnEsc(InputAction.CallbackContext context)
@@ -52,7 +52,7 @@ public class UIManager : Singleton<UIManager>
     {
         isMenuOpen = !isMenuOpen;
 
-        AudioManager.Instance.PlaySFX("Button");
+        AudioManager.Instance.PlaySFX("SFX_Button");
         Debug.Log("OFF");
         MenuAnimator.SetTrigger("Close");
         Time.timeScale = 1f;
@@ -64,11 +64,11 @@ public class UIManager : Singleton<UIManager>
     public void PotalA()
     {
         _potal.SetTrigger("blue");
-        AudioManager.Instance.PlaySFX("Portal_In");
+        AudioManager.Instance.PlaySFX("SFX_Portal_Out");
     }
     public void PotalB()
     {
         _potal.SetTrigger("orange");
-        AudioManager.Instance.PlaySFX("Portal_In");
+        AudioManager.Instance.PlaySFX("SFX_Portal_Out");
     }
 }

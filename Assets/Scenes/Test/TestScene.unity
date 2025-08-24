@@ -4523,7 +4523,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 170446446}
-  - component: {fileID: 170446445}
+  - component: {fileID: 170446451}
+  - component: {fileID: 170446450}
+  - component: {fileID: 170446449}
+  - component: {fileID: 170446448}
+  - component: {fileID: 170446447}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -4531,53 +4535,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &170446445
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 170446444}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 283d90e95197d6449a8e16e70f9a68b2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mixer: {fileID: 24100000, guid: 22f665f2425a9ab48872a42698ce76a1, type: 2}
-  bgmChannels: 2
-  sfxChannels: 10
-  bgmClipList:
-  - name: Title
-    clip: {fileID: 8300000, guid: 1d8ffbb70dc716646abe11dba492a567, type: 3}
-  - name: InGame
-    clip: {fileID: 8300000, guid: e11a3f731847f0448845ec6c60b679ba, type: 3}
-  sfxClipList:
-  - name: Button
-    clip: {fileID: 8300000, guid: 2fa0d1450df6dc3408529b9b6b24689e, type: 3}
-  - name: Portal_In
-    clip: {fileID: 8300000, guid: e64209a3c663626498d728201a3e848e, type: 3}
-  - name: Door_on
-    clip: {fileID: 8300000, guid: fb62fab8dc0c7de49b52d9b43e2a42c3, type: 3}
-  - name: Robot_on
-    clip: {fileID: 8300000, guid: a0c1a7fe0aa50b64b98303202ef0ee00, type: 3}
-  - name: Sys_on
-    clip: {fileID: 8300000, guid: e2dd3be13bc7fe6488369107d11e1b45, type: 3}
-  - name: Jump
-    clip: {fileID: 8300000, guid: ea5ecb95caf5c824b854e483e944e409, type: 3}
-  - name: FootStep
-    clip: {fileID: 8300000, guid: 641a6cb79f5f8d543a4b203621a47687, type: 3}
-  - name: PlayerJump
-    clip: {fileID: 8300000, guid: ad203b27bd0fd224aafe1c6f6fd0555f, type: 3}
-  - name: Turret_TrackRotate
-    clip: {fileID: 8300000, guid: 9d2e581ee4adfa4459fb5d4249ee1001, type: 3}
-  - name: Turret_Fire
-    clip: {fileID: 8300000, guid: ae43a9da74e021348b05ce59d52b467b, type: 3}
-  - name: Laser_Hit
-    clip: {fileID: 8300000, guid: b6b24b4a003806a47887d447bd3ebd57, type: 3}
-  - name: Portal
-    clip: {fileID: 8300000, guid: 5517815d9f6f5314a84e9cc0d3f7d109, type: 3}
-  - name: Robot_on2
-    clip: {fileID: 8300000, guid: 9ad7f28858397f846aaba8e74d374626, type: 3}
 --- !u!4 &170446446
 Transform:
   m_ObjectHideFlags: 0
@@ -4593,6 +4550,76 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &170446447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170446444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3a11a0be69fcd744b7a1d5bf4f0f2b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mixer: {fileID: 24100000, guid: 22f665f2425a9ab48872a42698ce76a1, type: 2}
+--- !u!114 &170446448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170446444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53f894252b3f92c4ba2d810369eb2239, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &170446449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170446444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9db9cf2965211144c8bd9b894d9bd164, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxPlayers: []
+--- !u!114 &170446450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170446444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9abd88a9f102b04cb5a7ceabb65e3ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bgmPlayers: []
+--- !u!114 &170446451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170446444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 283d90e95197d6449a8e16e70f9a68b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bgmController: {fileID: 170446450}
+  sfxController: {fileID: 170446449}
+  audioLoader: {fileID: 170446448}
+  volumeManager: {fileID: 170446447}
+  bgmSlider: {fileID: 1039425457}
+  sfxSlider: {fileID: 2064840080}
+  audioData: {fileID: 11400000, guid: 9aca02dafbc080e43a9b77a69f3a9152, type: 2}
 --- !u!1001 &171432749
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15618,7 +15645,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &600076308
 Transform:
   m_ObjectHideFlags: 0
@@ -17389,7 +17416,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &666050203
 RectTransform:
   m_ObjectHideFlags: 0

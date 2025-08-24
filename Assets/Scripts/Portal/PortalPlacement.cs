@@ -108,7 +108,7 @@ public class PortalPlacement : MonoBehaviour
             if (wasPlaced)
             {
                 portalToPlace.transform.SetParent(hit.collider.transform, true); // true는 월드 위치를 유지하기 위함
-                AudioManager.Instance.PlaySFX("Portal");
+                AudioManager.Instance.PlaySFX("SFX_Portal");
             }
         }
     }

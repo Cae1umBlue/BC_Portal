@@ -8,10 +8,15 @@ public class VolumeManager : MonoBehaviour
 {
     [Header("Audio Mixer")]
     [SerializeField] private AudioMixer mixer;
-    public AudioMixer MIxer { get; private set; }
+    public AudioMixer Mixer { get; private set; }
     private Slider bgmSlider;
     private Slider sfxSlider;
 
+
+    private void Awake()
+    {
+        Mixer = mixer;
+    }
 
     public void AudioSliders(Slider bgm, Slider sfx) // 볼륨 조절 슬라이더
     {

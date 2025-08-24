@@ -28,6 +28,6 @@ public class StageSound : MonoBehaviour
         {
             animator.SetTrigger("On");
         }
-        AudioManager.Instance.PlaySFX("Sys_on");
+        AudioManager.Instance.PlaySFX("SFX_Sys_On");
     }
 }

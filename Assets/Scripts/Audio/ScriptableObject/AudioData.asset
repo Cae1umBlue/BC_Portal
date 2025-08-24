@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65760a6328a8e0f40acbcbeeea2c1d50, type: 3}
+  m_Name: AudioData
+  m_EditorClassIdentifier: 
+  bgmList:
+  - name: BGM_Title
+    key: TitleBGMClip
+  - name: BGM_Main
+    key: MainBGMClip
+  sfxList:
+  - name: SFX_FootStep
+    key: FootStepClip
+  - name: SFX_Portal
+    key: PortalClip
+  - name: SFX_Portal_Out
+    key: Portal_OutClip
+  - name: SFX_Robot_On
+    key: Robot_OnClip
+  - name: SFX_Robot_On2
+    key: Robot_On2Clip
+  - name: SFX_Button
+    key: ButtonClip
+  - name: SFX_DoorOpen
+    key: DoorOpenClip
+  - name: SFX_Sys_On
+    key: Sys_OnClip
+  - name: SFX_JumpPad
+    key: JumpPadClip
+  - name: SFX_Laser_Hit
+    key: Laser_HitClip
+  - name: SFX_Laser_Fire
+    key: Laser_FireClip
+  - name: SFX_Turret_TrackRotate
+    key: Turret_TrackRotateClip
+  - name: SFX_Turret_IdleRotate
+    key: Turret_IdleRotateClip

@@ -23,8 +23,8 @@ public class TitleUI : MonoBehaviour
 
     void Start()
     {
-        AudioManager.Instance.PlayBGM("Title");
-        AudioManager.Instance.AudioSliders(bgmSlider, sfxSlider);
+        AudioManager.Instance.PlayBGM("BGM_Title");
+        //AudioManager.Instance.AudioSliders(bgmSlider, sfxSlider);
 
         Screen.SetResolution(1600, 900, true);
 
@@ -60,18 +60,18 @@ public class TitleUI : MonoBehaviour
     // 코드조작보다 애니메이션, 타임라인 등 활용하는게 좋을듯합니다
     IEnumerator GameStart()
     {
-        AudioManager.Instance.PlaySFX("Button");
+        AudioManager.Instance.PlaySFX("SFX_Button");
         yield return new WaitForSeconds(4.3f);
-        AudioManager.Instance.StopBGM("Title");
-        AudioManager.Instance.PlayBGM("InGame");
+        AudioManager.Instance.StopBGM("BGM_Title");
+        AudioManager.Instance.PlayBGM("BGM_Main");
         yield return new WaitForSeconds(3f);
-        AudioManager.Instance.PlaySFX("Robot_on");
+        AudioManager.Instance.PlaySFX("SFX_Robot_On");
         yield return new WaitForSeconds(2f);
         uiManager.enabled = true;
         playerInput.enabled = true;
         StageManager.Instance.RespawnPlayer(player);
         yield return new WaitForSeconds(1f);
-        AudioManager.Instance.PlaySFX("Robot_on2");
+        AudioManager.Instance.PlaySFX("SFX_Robot_On2");
         hpgauge.SetActive(true);
         yield return new WaitForSeconds(1f);
         player.SetActive(true);
@@ -80,11 +80,11 @@ public class TitleUI : MonoBehaviour
 
     IEnumerator LoadStart()
     {
-        AudioManager.Instance.PlaySFX("Button");
+        AudioManager.Instance.PlaySFX("SFX_Button");
         yield return new WaitForSeconds(1f);
-        AudioManager.Instance.StopBGM("Title");
-        AudioManager.Instance.PlayBGM("InGame");
-        AudioManager.Instance.PlaySFX("Robot_on");
+        AudioManager.Instance.StopBGM("BGM_Title");
+        AudioManager.Instance.PlayBGM("BGM_Main");
+        AudioManager.Instance.PlaySFX("SFX_Robot_On");
         uiManager.enabled = true;
         playerInput.enabled = true;
         yield return new WaitForSeconds(0.5f);
@@ -106,14 +106,14 @@ public class TitleUI : MonoBehaviour
     public void OnClickSettings()
     {
         //세팅 패널
-        AudioManager.Instance.PlaySFX("Button");
+        AudioManager.Instance.PlaySFX("SFX_Button");
         introAnimator.SetBool("SETTINGS", true);
     }
 
     public void OnClickCancel()
     {
         //타이틀로 돌아가기
-        AudioManager.Instance.PlaySFX("Button");
+        AudioManager.Instance.PlaySFX("SFX_Button");
         introAnimator.SetBool("SETTINGS", false);
     }
 

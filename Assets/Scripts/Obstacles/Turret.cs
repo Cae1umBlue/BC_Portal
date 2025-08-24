@@ -97,13 +97,13 @@ public class Turret : ObstacleBase
     // 대기 모드일 때는 Idle 사운드, 추적 모드일때는 Track 사운드
     private void HandleRotateSound()
     {
-        string _newSound = target == null ? "Turret_IdleRotate" : "Turret_TrackRotate";
+        string _newSound = target == null ? "SFX_Turret_IdleRotate" : "SFX_Turret_TrackRotate";
 
         if (_newSound != currentSound)
         {
             AudioManager.Instance.StopSFX(currentSound);
 
-            if (_newSound == "Turret_IdleRotate")
+            if (_newSound == "SFX_Turret_IdleRotate")
                 AudioManager.Instance.PlayLoopSFX(_newSound);
             else
                 AudioManager.Instance.PlaySFX(_newSound);
@@ -165,7 +165,7 @@ public class Turret : ObstacleBase
     Quaternion _rotation = Quaternion.LookRotation(_direction) * Quaternion.Euler(90f, 0f, 0f);
 
     // 사운드 및 이펙트 재생
-    AudioManager.Instance.PlaySFX("Turret_Fire");
+    AudioManager.Instance.PlaySFX("SFX_Turret_Fire");
     MuzzleFlash?.Play();
 
     // 레이저 생성 및 초기화
